@@ -1,6 +1,7 @@
 package com.example.addon;
 
 import com.example.addon.commands.CommandExample;
+import com.example.addon.modules.BlockUpdateRadar; // 8-19-25 parkourmaniac
 import com.example.addon.hud.HudExample;
 import com.example.addon.modules.ModuleExample;
 import com.mojang.logging.LogUtils;
@@ -24,6 +25,7 @@ public class AddonTemplate extends MeteorAddon {
 
         // Modules
         Modules.get().add(new ModuleExample());
+        Modules.get().add(new BlockUpdateRadar()); // 8-19-25 parkourmaniac
 
         // Commands
         Commands.add(new CommandExample());
